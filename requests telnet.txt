@@ -1,0 +1,30 @@
+GET / HTTP/1.0
+Host: u82685.kubsu-dev.ru
+
+GET /index.php HTTP/1.1
+Host: u82685.kubsu-dev.ru
+
+
+HEAD /file.tar.gz HTTP/1.1
+Host: u82685.kubsu-dev.ru
+
+
+HEAD /image.png HTTP/1.1
+Host: u82685.kubsu-dev.ru
+
+
+POST /index.php HTTP/1.1
+Host: u82685.kubsu-dev.ru
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 19
+
+comment=Hello_World
+
+
+GET /file.tar.gz HTTP/1.1
+Host: u82685.kubsu-dev.ru
+Range: bytes=0-99
+
+
+HEAD /index.php HTTP/1.1
+Host: u82685.kubsu-dev.ru
